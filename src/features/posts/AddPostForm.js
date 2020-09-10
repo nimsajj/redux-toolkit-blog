@@ -21,6 +21,7 @@ export const AddPostForm = () => {
 
       setTitle('')
       setContent('')
+      setUserId('')
     }
   }
   const canSave = Boolean(title) && Boolean(content) && Boolean(userId)
