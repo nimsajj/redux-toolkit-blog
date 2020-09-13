@@ -67,7 +67,7 @@ const postsSlice = createSlice({
       state.error = action.error.message
     },
     // Use the `addOne` reducer for the fulfilled case
-    [addNewPost.fulfilled]: (state, action) => postsAdapter.addOne,
+    [addNewPost.fulfilled]: postsAdapter.addOne,
   },
 })
 
